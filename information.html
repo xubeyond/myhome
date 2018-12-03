@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<script src="js/jquery-1.4.4.min.js"></script>
+		<script>
+			$(function(){
+				$('.box4').hide();
+				$("#boxc").click(function(){
+					$('.box4').show(500);
+					$('.box5').hide();
+					$('#wdgz').hide();
+					$('#gx').hide();
+					$('#pd').hide();
+					$("#pz").hide();
+                    $('#wdgz1').hide();
+					$("#pq").hide();
+					$("#zx").hide();
+				})
+			})
+			
+			$(function(){
+				$('.box5').hide();
+				$("#boxa").click(function(){
+					$('.box5').show(500);
+					$('.box4').hide();
+					$('#wdgz').hide();
+					$('#gx').hide();
+					$('#pd').hide();
+					$("#pz").hide();
+					$('#wdgz1').hide();
+					$("#pq").hide();
+					$("#zx").hide();
+
+				})
+			})
+			$(function(){
+				
+				$('#pd').click(function(){
+					$("#wdgz").show(500);
+					$(".gz").show(500);
+					$('#zx').hide()
+					$('#pd').css("color","green")
+					$("#pz").hide();
+					$('#pq').show(500);
+					
+				
+				})
+			})
+			$(function(){
+				$('#gx').click(function(){
+					$('#wdgz').hide()
+					$('#zx').show(500)
+					$('#gx').css("color","green")
+					$('#pz').show(500);
+					$('#pq').hide();
+					
+				})
+			})
+			
+			$(function(){
+				$("#pd").hide()
+				$('#wdgz').hide()
+				$('#pq').hide()
+				$("#pd").show();
+				$('#boxb').click(function(){
+					$("#wdgz1").show();
+					$(".gz").hide()
+					$("#gx").show(500);
+					$("#zx").show(500);
+					$("#pz").show(500);
+					$("#pd").show(500);
+					$('.box5').hide();
+					$('.box4').hide();
+				})
+			})
+		
+		</script>
+		<style>
+		*{
+			margin: 0;
+			padding: 0;
+		 }
+		.perin{
+			position:absolute;
+			top:0%;
+			width:100%;
+			height:10%;
+			background:rgba(18,16,19,1);
+			color:#78A707;
+			}
+		.grxx
+		{
+			position: absolute;
+			top:15%;
+			width:80%;
+			height:21%;
+			left:10%;
+			background-color:rgb(253,253,253);
+			border: 1px solid #EEEEEE;
+		}
+		.grxx1
+		{
+			position: absolute;
+			width:17%;
+			height:100%;
+			background-color:#F7F7F7;
+			border:;
+			
+		}
+		.box3{
+			background-color:#F7F7F7;
+		}
+		.box3:hover
+		{
+			color: white;
+			border: 1px solid green;
+			background:#5AA701;
+		}
+		.pa{
+			color:darkgray;
+		}
+		.pa:hover
+		{
+			color: green;
+		}
+		.box5:hover .box6{
+			background:#FD7E28;
+			color: white;
+		}
+		.box7{
+			position: absolute;
+			top:30%;
+			width:18%;
+			height:30%;
+			left:4.9%;
+			background-color:rgba(45,45,45,0.5);
+			text-align: center;
+			padding-top:5%;
+			color:white;
+		    display: none;
+		}
+		.box5:hover .box7{
+			display: block;
+		}
+		.gz{
+			position: absolute;
+			width:17%;
+			height: 12%;
+			left:18.5%;
+			top: 20%;
+		}
+		.gz:hover
+		{
+			background: #F7F7F7;
+		}
+		.ckgx
+		{
+			background:#F2F2F2;
+		}
+		.ckgx:hover{
+			background:#5AA701;
+			color: white;
+		}
+		#gx:hover
+		{
+			background:#5AA701 ;
+			color: white;
+		}
+		#pd:hover
+		{
+			background:#5AA701 ;
+			color: white;
+		}
+		.box6
+		{
+			background: #F3ECE1;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="perin">
+			<img src="images/logo108x35_black.png" style="margin-top:15px;margin-left: 5px;"><span style="font-size:20px;position: absolute;top:35%;">.个人中心</span>
+		</div>
+		
+		<div class="grxx">
+			<div class="grxx1">
+				<img class="img-circle" src="images/tx.jpg" width="80" height="80" style="position: absolute;left:10%;top:20%;border-radius:50px;"/>
+				<p style="position: absolute;top:20%;left:50%;font-family:微软雅黑;font-size: 14px;">我的哥..</p><img src="images/vip.jpg" width="20" height="20" style="position: absolute;left:78%;top:20%;border: white;">
+                <img src="images/money.jpg" width="20" height="20" style="position: absolute;top:45%;left:50%;"><p style="position: absolute;color: #DAB176;top:45%;left:62%;">775</p>
+				<p style="position: absolute;top:70%;left:50%;font-size: 12px;color: grey;font-family: 微软雅黑;">今日已签到<p>
+			</div>
+		
+		<div class="grxx2">
+			<img src="images/vip.jpg" width="40" height="40" style="position: absolute;left:25%;top:10%;">
+			<div style="position: absolute;top:49%;background-color:rgb(202,163,110);width:7%;height:15%;left:23%;border-radius: 30px;text-align: center;color: white;font-size: 14px;padding-top:0.5%;">签到+成长值</div>
+			<p style="position: absolute;top:80%;color:#CAA36E;left:24%;"><strong>立即续费</strong></p>
+		</div>
+		
+		<div style="position: absolute;background-color:#F3ECE1;width:3.5%;height:23%;top:48%;left:35%;border-radius:30px;">
+			<div style="position: absolute;top:25%;width:50%;height:50%;background-color:#D1A265;left:24%;color: white;padding-left:2%;">V3</div>
+		</div>
+			
+			<div style="position: absolute;width:20%;height:10%;background-color:#F3ECE1;top: 54%;left:38%;">
+				<div style="position: absolute;width: 30%;height:30%;background-color:#D1A265 ;top:30%;"></div>
+			</div>
+			
+			<div style="position: absolute;background-color:#F3ECE1;width:3.5%;height:23%;top:48%;left:55%;border-radius:30px;">
+				<div style="position: absolute;top:25%;width:50%;height:50%;background-color:#D1A265;left:24%;color: white;padding-left:2%;">V4</div>
+			</div>
+			<p style="position: absolute;top:70%;left:38%;">黄金VIP会员 2018-12-16到期</p>
+			<div style="position: absolute;left:43%;width:6%;height: 13%;border: 1px solid #D1A265 ;top: 25%;color: #D1A265 ;font-size: 12px;font-family: 微软雅黑;"> 成长值1868</div>
+			
+			<div style="position: absolute;height: 90%;width:1px;background-color: #EEEEEE;left: 62%;top:5%;"></div>
+			
+			<div style="position: absolute;width:3%;height:23%;left:80%;background-color:lightgrey;border-radius:30px;top:20%;"></div>
+			
+			<div style="position: absolute;top:49%;background-color:#00C13B;width:7%;height:15%;left:78%;border-radius: 30px;text-align: center;color: white;font-size: 14px;padding-top:0.5%;">立即开通</div>
+			<p style="position: absolute;top: 82%;left:72%;color: darkgrey;">开通体育会员享精彩体育赛事<p>
+		</div>
+		<!--侧边导航栏-->
+		<div class="box1" style="position:absolute;top:40%;height:90%;width:80%;left:10%;background-color:white;border: 2px solid #F7F7F7;">
+			<div class="box2" style="position: absolute;height: 100%;width:16.9%;background-color:#F7F7F7;">
+				<div id="boxa" class="box3" style="position: absolute;width: 100%;height:4%;top:5%;text-align: center;padding-top:7%;font-size: 14px;font-family: 微软雅黑;">
+					<p>播放记录</p>
+				</div>
+				<div id="boxb" class="box3" style="position: absolute;width: 100%;height:4%;top:13%;text-align: center;padding-top:7%;font-size: 14px;font-family: 微软雅黑;">
+					<p >我的关注</p>
+				</div>
+				<div id="boxc" class="box3" style="position: absolute;width: 100%;height:4%;top:20%;text-align: center;padding-top:7%;font-size: 14px;font-family: 微软雅黑;">
+					<p>我的消息</p>
+				</div>
+				<div id="boxd" class="box3" style="position: absolute;width: 100%;height:4%;top:28%;text-align: center;padding-top:7%;font-size: 14px;font-family: 微软雅黑;">
+					<p>我的空间</p>
+				</div>
+				<div id="boxd" class="box3" style="position: absolute;width: 100%;height:4%;top:36%;text-align: center;padding-top:7%;font-size: 14px;font-family: 微软雅黑;">
+					<p>我的积分</p>
+				</div>
+				<div id="boxd" class="box3" style="position: absolute;width: 100%;height:4%;top:44%;text-align: center;padding-top:7%;font-size: 14px;font-family: 微软雅黑;">
+					<p>我的钱包</p>
+				</div>
+				<div id="boxd" class="box3" style="position: absolute;width: 100%;height:4%;top:52%;text-align: center;padding-top:7%;font-size: 14px;font-family: 微软雅黑;">
+					<p>我的游戏</p>
+				</div>
+			</div>
+			<!--我的消息-->
+			<div class="box4" style="position: absolute;top: 10%; left:17%;height:13%;width:83%;border:1.5px solid #F7F7F7;">
+				<img src="images/ads.PNG" style="position:absolute;top:20%;"/>
+				<p style="position: absolute;top:22%;left:8%;font-size: 14px;">告别唯流量时代 爱奇艺正式宣布关闭显示前台播放量</p>
+				<p style="position: absolute;top:50%;left: 8%;font-size: 12px;color: darkgray;">9月3日起，爱奇艺正式关闭显示全站前台流量数据，以综合用户讨论度、互动量、多维度播放类指标的内容热度来代替原有播放量显示，为合作伙伴...</br>2018-10-31</p>
+				<p style="position: absolute;top:68%;left:17%;font-size: 12px;" class="pa">查看详情</p>
+			</div>
+			
+			<div class="box4" style="position: absolute;top:25%; left:17%;height:13%;width:83%;border:1.5px solid #F7F7F7;">
+				<img src="images/sjll.png" style="position:absolute;top:20%;"/>
+				<p style="position: absolute;top:22%;left:8%;font-size: 14px;">神剧亮了 有更新 倾城时光开播特辑：赵丽颖金瀚狗粮暴击</p>
+				<p style="position: absolute;top:50%;left: 8%;font-size: 12px;color: darkgray;"></br>2018-10-31</p>
+				<p style="position: absolute;top:68%;left:17%;font-size: 12px;" class="pa">查看详情</p>
+			</div>
+			
+			<!--播放记录-->
+			<div class="box5" style="position: absolute;top:6%; left:17%;height:28%;width:83%;border:2px solid #F7F7F7;">
+				<p style="position: absolute;top: -30px;left:5%;">播放记录</p>
+				<div class="box6" style="position: absolute;width:5%;height:12%;border: 1px solid orange;left:5%;top:10%;text-align: center;">今天</div>
+				<img src="images/bfjl.PNG" style="position: absolute;top:30%;left: 5%;" />
+				<p style="position: absolute;left:27%;top:33%;">延禧攻略第1集</p>
+				<div class="box7" >续播 | 下一集</div>
+			</div>
+			
+			<div class="box5" style="position: absolute;top:34%; left:17%;height:28%;width:83%;border:2px solid #F7F7F7;">
+				<div class="box6" style="position: absolute;width:5%;height:12%;border: 1px solid orange;left:5%;top:10%;text-align: center;">昨天</div>
+				<img src="images/LS.png" style="position: absolute;top:30%;left: 5%;" width="178" height="107"/>
+				<p style="position: absolute;left:27%;top:33%;">凉生我们可不可以不忧伤第58集</p>
+				<div class="box7" >续播 | 下一集</div>
+			</div>
+			<!--我的关注-->
+			<div id="wdgz1" style="position: absolute;width:83%;height:10%;left:17%;border-bottom: 1px solid darkgray;">
+				<div id="gx" style="position: absolute;width: 10%;height:100%;left:0%;text-align: center;">
+					<p style="position: absolute;top:40%;left: 20%;">更新</p>
+				</div>
+				<div id="pd" style="position: absolute;width: 10%;height:100%;left:10%;text-align: center;">
+					<p style="position: absolute;top:40%;left: 30%;">频道</p>
+				</div>
+			</div>
+			
+			<p id="pz" style="position: absolute;top:13%;left:18.5%;">最新<p>
+			<div id="zx" style="position: absolute;top:18%;left: 18.5%;width: 80%;height: 30%;background:;">
+				<img src="images/gx1.png" />
+				<img src="images/gx2.png" />
+				<img src="images/gx3.png" />
+				<img src="images/gx4.png" />
+			</div>
+			<p id="pq" style="position: absolute;top:13%;left:18.5%;">我的关注<p>
+			<div id="wdgz">
+				<div class="gz">
+					<img src="images/xgf.jpg" width="60" height="60" style="position: absolute;border-radius:40px;top:8%;left: 2%;"/>
+					<p style="position: absolute;left:43%;top:7%;">Big笑工坊</p>
+					<div class="ckgx" style="position: absolute;top:65%;left:40%;width:30%;height:25%;font-size: 12px;text-align: center;">查看更新</div>
+					<div class="qxgz" style="position:absolute;top:65% ;left:70%;font-size: 12px;width: 30%;height: 25%;">
+						<p >取消关注</p>
+					</div>
+				</div>
+				
+				<div class="gz" style="position: absolute;left:37%;">
+					<img src="images/pd2.jpg" width="60" height="60" style="position: absolute;border-radius:40px;top:8%;left: 2%;"/>
+					<p style="position: absolute;left:43%;top:7%;">大学z课堂</p>
+					<div class="ckgx" style="position: absolute;top:65%;left:40%;width:30%;height:25%;font-size: 12px;text-align: center;">查看更新</div>
+					<div class="qxgz" style="position:absolute;top:65% ;left:70%;font-size: 12px;width: 30%;height: 25%;">
+						<p >取消关注</p>
+					</div>
+				</div>
+				
+				<div class="gz" style="position: absolute;left:55%;">
+					<img src="images/pd3.jpg" width="60" height="60" style="position: absolute;border-radius:40px;top:8%;left: 2%;"/>
+					<p style="position: absolute;left:43%;top:7%;">不留恋不眷恋</p>
+					<div class="ckgx" style="position: absolute;top:65%;left:40%;width:30%;height:25%;font-size: 12px;text-align: center;">查看更新</div>
+					<div class="qxgz" style="position:absolute;top:65% ;left:70%;font-size: 12px;width: 30%;height: 25%;">
+						<p >取消关注</p>
+					</div>
+				</div>
+				
+				<div class="gz" style="position: absolute;left:73%;">
+					<img src="images/pd4.jpg" width="60" height="60" style="position: absolute;border-radius:40px;top:8%;left: 2%;"/>
+					<p style="position: absolute;left:43%;top:7%;">元气少女结灵</p>
+					<div class="ckgx" style="position: absolute;top:65%;left:40%;width:30%;height:25%;font-size: 12px;text-align: center;">查看更新</div>
+					<div class="qxgz" style="position:absolute;top:65% ;left:70%;font-size: 12px;width: 30%;height: 25%;">
+						<p >取消关注</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer" style="position: absolute;height:6%;width: 100%;top:980px;border: 1px solid darkgray;text-align: center;font-family: 微软雅黑;font-size: 12px;padding-top:0%;">
+			<p>公司介绍 | 新闻动态 | 联系方式 | 招聘英才 | 爱奇艺实验室 | 开发平台 | 爱奇艺认证 | 爱奇艺号 | 爱奇艺会员合作</p>
+		</div>
+	</body>
+</html>

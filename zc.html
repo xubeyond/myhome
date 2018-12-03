@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<html>
+<head>
+	<title></title>	
+	 <script src="js/jquery-1.4.4.min.js" type="text/javascript"></script>
+	 <link href="css/mycss.css"  rel="stylesheet"/>
+	  <script  type="text/javascript">
+	$(function(){
+	   
+	  $('.zc').find('#pphone').hide()
+	  $('.zc').find('#pemail').hide()
+	  $('.zc').find('#ppwd').hide()
+	  var myreg = /^(((13[0-9]{1})|(15[0-9]{1})|(18[0-9]{1}))+\d{8})$/;
+	  var myreg1 = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+	  $('#btn4').click(function(){
+	  	if($("#usernamea").val()==""||!myreg.test($("#usernamea").val()))
+	  	{
+	  		 $('.zc').find('#pphone').show()
+	  	}
+	  	if($("#userpwd").val()=="")
+	  	{
+	  		 $('.zc').find('#ppwd').show()
+	  	}
+	  	if($("#useremail").val()==""||!myreg1.test($("#useremail").val()))
+	  	{
+	  		 $('.zc').find('#pemail').show()
+	  	}
+	  else	if(!$("#checkbox").get(0).checked)
+	  	{
+	  		
+	  		alert("请阅读并同意服务协议")
+	  	}
+	  	else
+	  	{	
+	  		alert("注册成功")
+	  		window.location.href='index.html'
+	  	}
+	  })
+})
+
+  
+
+$(function(){
+	$('#usernamea').keyup(function(){
+		if($('#usernamea').val()!="")
+		{
+			 $('.zc').find('#pphone').hide()
+		}
+	})
+	$('#useremail').keyup(function(){
+		if($('#useremail').val()!="")
+		{
+			 $('.zc').find('#pemail').hide()
+		}
+	})
+	$('#userpwd').keyup(function(){
+		if($('#userpwd').val()!="")
+		{
+			 $('.zc').find('#ppwd').hide()
+		}
+	})
+})
+</script>
+</head>
+<body>
+	<div class="zc">
+	     <span style="position:absolute; top:20%;left:20%;color: black;">用户名:</span>	<input type="text" name="" id="usernamea" placeholder="手机号" value="" style="position:absolute;;width: 40%; top:20%;left:30%;border-top:none;border-left: none;border-right:none;outline:none;border-bottom-color:green;" />
+	     <p id="pphone" style="position:absolute;top: 20%;left:74%;color: red;">手机号填写有误</p>
+		 <span style="position:absolute; top:40%;left:20%;color: black;">密码：</span>	<input type="password" name="" id="userpwd" value="" placeholder="8-19字母或数字" style="position:absolute;width: 40%;  top:40%;left:30%;border-top:none;border-left: none;border-right:none;outline:none;border-bottom-color:green;" />
+		 <p id="ppwd" style="position:absolute;top: 40%;left:74%;color: red;">请输入密码</p>
+		 <span style="position:absolute; top:60%;left:20%;color: black;">邮箱：</span>	<input type="text" name="" id="useremail" value=""placeholder="电子邮箱" style="position:absolute; width: 40%;top:60%;left:30%;border-top:none;border-left: none;border-right:none;outline:none;border-bottom-color:green;" />
+		 <p id="pemail" style="position:absolute;top: 60%;left:74%;color: red;">邮箱填写有误</p>
+		 <button id="btn4"  style="position:absolute;background:rgba(188,211,152,1);width:250px;height:50px;top:75%;left:24%;border:none;">注册</button>
+		 <input type="checkbox" id="checkbox" checked=""  style="position: absolute;top:93%;left:55%;"/><p style="position: absolute;top: 90%;left:60%;color: green;">同意《用户协议》《隐私政策》</p>
+	</div>
+	<div style="position: absolute;background-color: black;opacity: 0.4;width: 100%;height:100%;">
+		<img src="images/zcbj.jpg" width="100%" height="100%" />
+	</div>
+</body>
+</html>
